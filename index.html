@@ -1,0 +1,51 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class = "bg-image"></div>
+    <form>
+        <!-- Header -->
+        <div class="head">
+            <h1>Форма оплаты</h1>
+            <p>Введите ваши данные для оплаты</p>
+        </div>
+        <!-- /Header -->
+
+        <!-- Main Form Started -->
+        
+        <input type="text" placeholder="Имя" name="User_name" id="User_name" required>
+        <input type="text" placeholder="Фамилия" name="User_Lastname" id="User_Lastname" required>
+
+        <input type="email" placeholder="email" name="почта" id="email" required>
+
+        
+        <input type="tel" placeholder="Телефон" name="phone" id="phone" required>
+
+        <input type="amount" placeholder="Сумма платежа" name="amount" id="amount" required>
+
+
+       
+        <textarea placeholder="Сообщение" name="message" id="message" required></textarea>
+
+        <div class="contact-form__input-wrapper">
+            <input id="check" type="checkbox" name="agreement">
+            <label for="agreement" class="contact-form__checkbox-label"><h2>Подписка на месяц</h2></label>
+            <div class="contact-form__error contact-form__error_agreement"></div>
+        </div>
+        <!-- Submit Button -->
+        <button id="payButton" type="button">Оплатить</button>
+
+    </form>
+    <!-- /Main Form Ended -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <script src="js/widget.js"></script>
+
+</body>
+</html>
