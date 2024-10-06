@@ -1,5 +1,5 @@
 this.paySample3 = function () {
-    var widget = new cp.CloudPayments();
+    var widget = new cp.CloudPayments({language: "ru-RU"});
 
     var amount = parseFloat($('#amount').val());
     var accountId = $('#email').val();
