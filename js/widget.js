@@ -24,7 +24,7 @@ this.paySample3 = function () {
         }
     }
 
-    widget.charge({ // options
+    widget.auth({ // options
         publicId: 'pk_df0628b305a3f4107bda1e8cbe79b', //id из личного кабинета
         description: 'Пополнение счета абонента ' + accountId, //назначение
         amount: amount, //сумма
