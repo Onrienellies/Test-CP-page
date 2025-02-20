@@ -28,7 +28,7 @@ this.paySample3 = function () {
         publicId: 'pk_df0628b305a3f4107bda1e8cbe79b', //id из личного кабинета
         description: 'Пополнение счета абонента ' + accountId, //назначение
         amount: amount, //сумма
-        currency: 'RUB', //валюта
+        currency: 'EUR', //валюта
         accountId: accountId, //идентификатор плательщика (обязательно для создания подписки)
         email: accountId,
         data: data
