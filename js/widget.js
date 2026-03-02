@@ -34,7 +34,7 @@ this.paySample3 = function () {
         data: data
     },
     function (options) { // success
-        //действие при успешной оплате
+        console.log{"успех"}//действие при успешной оплате
     },
     function (reason, options) { // fail
         //действие при неуспешной оплате
@@ -42,3 +42,4 @@ this.paySample3 = function () {
 };
 
 $('#payButton').click(paySample3);
+
