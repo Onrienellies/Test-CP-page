@@ -33,8 +33,8 @@ this.paySample3 = function () {
         email: accountId,
         data: data
     },
-    onSuccess: function (reason, options) {
-        console.log("текст в результате успеха"),
+    onSuccess: function (options) {
+        console.log("текст в результате успеха");
         console.log(options) //действие при успешной оплате
     },
     onFail: function (reason, options) { // fail
@@ -47,6 +47,7 @@ this.paySample3 = function () {
 };
 
 $('#payButton').click(paySample3);
+
 
 
 
