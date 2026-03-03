@@ -33,13 +33,18 @@ this.paySample3 = function () {
         email: accountId,
         data: data
     },
-    function (options) {
-            console.log("текст в результате успеха",options)
+    function (options) { // success
+            console.log("текст в результате успеха", options);
+        },
+        function (reason, options) { // fail
+            // Обработка неуспешной оплаты
+            console.error("Ошибка оплаты:", reason);
         }
     });
 };
 
 $('#payButton').click(paySample3);
+
 
 
 
