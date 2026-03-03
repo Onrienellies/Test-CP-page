@@ -34,13 +34,13 @@ this.paySample3 = function () {
         data: data
     },
     function (options) {
-            console.log("текст в результате успеха"),
-            console.log(options)
+            console.log("текст в результате успеха",options)
         }
     });
 };
 
 $('#payButton').click(paySample3);
+
 
 
 
