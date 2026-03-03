@@ -33,20 +33,21 @@ this.paySample3 = function () {
         email: accountId,
         data: data
     },
-    function (options) { // success
-            console.log("текст в результате успеха");
-            console.log(options);
+    function (options) {
+            console.log("текст в результате успеха"),
+            console.log(options)
         },
         function (reason, options) { // fail
-            console.log("Вариант2");
+            console.log("Вариант2")
         },
         function (reason, options) { // complete
-            console.log("Вариант3");
+            console.log("Вариант3")
         }
     });
 };
 
 $('#payButton').click(paySample3);
+
 
 
 
