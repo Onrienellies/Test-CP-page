@@ -32,18 +32,6 @@ this.paySample3 = function () {
         accountId: accountId, //идентификатор плательщика (обязательно для создания подписки)
         email: accountId,
         data: data
-    },
-    OnSuccess: function (options) { 
-        // success
-            console.log(options);
-        },
-    onFail: function (reason, options) {
-        // fail
-        // Обработка неуспешной оплаты
-        console.error(reason, options);
-        },
-    onComplete: funtion (PaymentResult,options) {
-        console.log(PaymentResult, options);
     }
     });
 };
