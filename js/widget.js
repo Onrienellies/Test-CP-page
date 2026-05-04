@@ -33,7 +33,7 @@ this.paySample3 = function () {
         email: accountId,
         data: data
     }
-    });
+    );
 };
 
 $('#payButton').click(paySample3);
